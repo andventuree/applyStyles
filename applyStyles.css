@@ -2,86 +2,72 @@ body{
 	background: rgb(55, 50, 52);
 }
 
+#allContent {
+	/*margin: auto;*/ /*should center div in browser*/
+	margin: 0px 23.5%;
+}
+
 .titleBox {
 	color: rgb(245,245,245);
-	margin: 0px;
+	/*margin: auto;*/
 	/*border: 2px solid blue;*/
 	text-align: center;
 }
 
-.exampleCSS {
+.displayHTML {
 	color: rgb(102,204,0);
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .bracket {
 	color: white;
+	font-size: 1.2em;
 }
 
-.floatStyles {
+.floatSections {
 	float: left;
-	/*border: 3px solid purple;*/
+	/*border: 3px solid orange;*/ /* used to test*/
 	width: 400px;
 	height: 400px;
-	padding: 0px 10px;
-	margin: 100px 0px 100px 150px;
+	padding: 5px;
+	/*margin: auto;*/ /*auto does not work with float*/
 }
 
-.floatContainer {
-	float: left;
-	/*border: 3px solid purple;*/
-	width: 400px;
-	height: 400px;
-	/*background: white;*/
-		background: rgb(55, 50, 52);
-	margin: 100px 100px 100px 0px;
-}
-
-#test {
-	/*border: 3px dashed green;*/
-}
 #container{
-	/*border: 2px solid purple;*/
+	/*border: 2px solid purple;*/ /* used to test*/
 	color: rgb(245,245,245);
-	margin: 33%;
-	padding: 5%;
-	text-align: center;
 }
+
+/*all the styles*/
+/* transition works, but it needs to be applied first
+then each affect after will animate by 2 sec */
+.transitionCSS		{ transition: all 2s				}
+.backgroundCSS		{ background: rgb(150,150,150)		}
+.colorCSS 			{ color: gold						}
+.fontCSS 			{ font-family: 'Lobster', cursive	}
+.heightCSS			{ height: 40px						} 
+.lineHeightCSS		{ line-height: 40px					}
+.widthCSS 			{ width: 50%						} 
+.marginCSS			{ margin: 25% 0px					} 
+.borderCSS			{ border: 2px dashed rgb(0,102,204)	}
+.paddingCSS			{ padding: 0px 10%					}
+.opacityCSS 		{ opacity: .5 						}
+.boxCSS				{ box-shadow: 10px 10px 5px black	}
+.textAlignCSS		{ text-align: right 				} 
+/*needs width for text-align to allow text to shift to a side*/
+.transformCSS		{ text-transform: uppercase			}
+.letterSpaceCSS		{ letter-spacing: 10				}
 
 .selectedBtn {
 	color: rgb(0,102,204);
 	font-weight: 600;
 }
 
-/*all the styles*/
-/* transition works, but it needs to be applied first
-then each affect after will animate by 1 sec */
-.transitionCSS		{ transition: all 2s				}
-.backgroundCSS		{ background: rgb(150,150,150)		}
-.colorCSS 			{ color: gold						}
-.fontCSS 			{ font-family: 'Lobster', cursive	}
-.heightCSS			{ height: 200px						} /*not perfect*/
-.widthCSS 			{ width: 200px						} /*not perfect*/
-.marginCSS			{ margin: 20px 20px 				} /*not perfect*/
-.borderCSS			{ border: 2px dashed rgb(0,102,204)	}
-.paddingCSS			{ padding: 35%						}
-.opacityCSS 		{ opacity: .5 						}
-/* need to figure out what this does*/
-.boxCSS				{ box-shadow: 10px 10px 5px black
-/*					  -moz-box-shadow: 10px 10px 5px #888888
-					  -webkit-box-shadow: 10px 10px 5px #888888*/	}
-/* will need to apply text align to the parent of id='target'*/
-.textAlignCSS		{ text-align: right 				} /*not perfect*/
-.transformCSS		{ text-transform: uppercase			}
-.letterSpaceCSS		{ letter-spacing: 10				}
-
-
 button {
 	/*width: 150px;*/
-	margin: 0px 0px 0px 5px;
+	margin-left: 5px;
 	border: none;
 	background: rgb(55, 50, 52);
-	text-align: left;
 	outline: none;
 	font-weight: 600;
 	height: 15px;
@@ -90,10 +76,8 @@ button {
 }
 
 button:hover {
-	/*background: gold;*/
 	/*outline: rgb(100,100,100);*/
-	text-align: left;
-	background: rgba(85, 80, 82, .1);
+	background: rgba(85, 80, 82, .3);
 	/*font-weight: 800;*/
-;
+}
 

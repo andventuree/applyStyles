@@ -12,14 +12,6 @@ var modeBtn = document.getElementsByClassName('mode');
 // var resetBtn = document.getElementById('reset');
 // var allStyles = document.getElementById('allStyles');
 
-//add this feature later
-	// //create a function that can be callback that will toggle
-	// //comment syntax for CSS to show style is not applied
-	// var commentSyntax = getElementsByClassName('syntax');
-	// function commentOut() {
-	// 	document.getElementsByClassName('comment');
-	// }
-
 //create the loop that puts the style on a selected button
 	//select all the buttons and store in a variable
 	var allBtn = document.querySelectorAll('button');
@@ -41,6 +33,27 @@ document.querySelector('.transition').addEventListener('click', function() {
 document.querySelector('.background').addEventListener('click', function() {
 	displayStyle.classList.toggle('backgroundCSS');
 });
+document.querySelector('.border').addEventListener('click', function() {
+	displayStyle.classList.toggle('borderCSS');
+});
+document.querySelector('.padding').addEventListener('click', function() {
+	displayStyle.classList.toggle('paddingCSS');
+});
+document.querySelector('.box').addEventListener('click', function(){
+	displayStyle.classList.toggle('boxCSS');
+});
+document.querySelector('.letterSpace').addEventListener('click', function() {
+	displayStyle.classList.toggle('letterSpaceCSS');
+});
+document.querySelector('.transform').addEventListener('click', function() {
+	displayStyle.classList.toggle('transformCSS');
+});
+document.querySelector('.margin').addEventListener('click', function() {
+	displayStyle.classList.toggle('marginCSS');
+});
+document.querySelector('.opacity').addEventListener('click', function() {
+	displayStyle.classList.toggle('opacityCSS');
+});
 document.querySelector('.color').addEventListener('click', function(){
 	displayStyle.classList.toggle('colorCSS');
 });
@@ -50,32 +63,14 @@ document.querySelector('.font').addEventListener('click', function() {
 document.querySelector('.height').addEventListener('click', function() {
 	displayStyle.classList.toggle('heightCSS');
 });
+document.querySelector('.lineHeight').addEventListener('click', function() {
+	displayStyle.classList.toggle('lineHeightCSS');
+});
 document.querySelector('.width').addEventListener('click', function() {
 	displayStyle.classList.toggle('widthCSS');
 });
-document.querySelector('.margin').addEventListener('click', function() {
-	displayStyle.classList.toggle('marginCSS');
-});
-document.querySelector('.border').addEventListener('click', function() {
-	displayStyle.classList.toggle('borderCSS');
-});
-document.querySelector('.padding').addEventListener('click', function() {
-	displayStyle.classList.toggle('paddingCSS');
-});
-document.querySelector('.opacity').addEventListener('click', function() {
-	displayStyle.classList.toggle('opacityCSS');
-});
-document.querySelector('.box').addEventListener('click', function(){
-	displayStyle.classList.toggle('boxCSS');
-});
 document.querySelector('.textAlign').addEventListener('click', function() {
 	displayStyle.classList.toggle('textAlignCSS');
-});
-document.querySelector('.transform').addEventListener('click', function() {
-	displayStyle.classList.toggle('transformCSS');
-});
-document.querySelector('.letterSpace').addEventListener('click', function() {
-	displayStyle.classList.toggle('letterSpaceCSS');
 });
 
 //need a reset button to take off all the styles instead of having to refresh
@@ -97,93 +92,56 @@ function effectAll() {
 
 
 function applyAll() {
-		displayStyle.classList.add('transitionCSS');
-		displayStyle.classList.add('backgroundCSS');
-		displayStyle.classList.add('colorCSS');
-		displayStyle.classList.add('fontCSS');
-		displayStyle.classList.add('heightCSS');
-		displayStyle.classList.add('widthCSS');
-		displayStyle.classList.add('marginCSS');
-		displayStyle.classList.add('borderCSS');
-		displayStyle.classList.add('paddingCSS');
-		displayStyle.classList.add('opacityCSS');
-		displayStyle.classList.add('boxCSS');
-		displayStyle.classList.add('textAlignCSS');
-		displayStyle.classList.add('transformCSS');
-		displayStyle.classList.add('letterSpaceCSS');
-		for (var i = 0; i < allBtn.length; i++) {
-		allBtn[i].classList.add('selectedBtn');
-		}
+	displayStyle.classList.add('transitionCSS');
+	displayStyle.classList.add('backgroundCSS');
+	displayStyle.classList.add('borderCSS');
+	displayStyle.classList.add('paddingCSS');
+	displayStyle.classList.add('boxCSS');
+	displayStyle.classList.add('letterSpaceCSS');
+	displayStyle.classList.add('transformCSS');
+	displayStyle.classList.add('marginCSS');
+	displayStyle.classList.add('opacityCSS');
+	displayStyle.classList.add('colorCSS');
+	displayStyle.classList.add('fontCSS');
+	displayStyle.classList.add('heightCSS');
+	displayStyle.classList.add('lineHeightCSS');
+	displayStyle.classList.add('widthCSS');
+	displayStyle.classList.add('textAlignCSS');
+		
+	for (var i = 0; i < allBtn.length; i++) {
+	allBtn[i].classList.add('selectedBtn');
+	}
 }
 
 function resetAll() {
 	displayStyle.classList.remove('transitionCSS');
 	displayStyle.classList.remove('backgroundCSS');
+	displayStyle.classList.remove('borderCSS');
+	displayStyle.classList.remove('paddingCSS');
+	displayStyle.classList.remove('boxCSS');
+	displayStyle.classList.remove('transformCSS');
+	displayStyle.classList.remove('marginCSS');
+	displayStyle.classList.remove('widthCSS');
+	displayStyle.classList.remove('opacityCSS');
+	displayStyle.classList.remove('letterSpaceCSS');
 	displayStyle.classList.remove('colorCSS');
 	displayStyle.classList.remove('fontCSS');
 	displayStyle.classList.remove('heightCSS');
-	displayStyle.classList.remove('widthCSS');
-	displayStyle.classList.remove('marginCSS');
-	displayStyle.classList.remove('borderCSS');
-	displayStyle.classList.remove('paddingCSS');
-	displayStyle.classList.remove('opacityCSS');
-	displayStyle.classList.remove('boxCSS');
+	displayStyle.classList.remove('lineHeightCSS');
 	displayStyle.classList.remove('textAlignCSS');
-	displayStyle.classList.remove('transformCSS');
-	displayStyle.classList.remove('letterSpaceCSS');
+		
 	for (var i = 0; i < allBtn.length; i++) {
 	allBtn[i].classList.remove('selectedBtn');
 	}
 }
 
+//JS could be refactored
+//app could be improved by fixing the select all/reset button so it doesnt highlight all buttons
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//add this feature later
+	// //create a function that can be callback that will toggle
+	// //comment syntax for CSS to show style is not applied
+	// var commentSyntax = getElementsByClassName('syntax');
+	// function commentOut() {
+	// 	document.getElementsByClassName('comment');
+	// }

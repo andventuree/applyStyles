@@ -1,11 +1,9 @@
 <html>
 <head>
-	<title>
+	<title>CSS properties
 	</title>
 	<link rel='stylesheet' type='text/css' href='applyStyles.css'>
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-
 </head>
 <body>
 	<div>
@@ -13,51 +11,53 @@
 		<button class='mode'>Reset</button>	
 	</div>
 
-	<div class='outline floatStyles'>	
-		<h1 class='titleBox'>CSS</h1>
-		<hr>
-		<span class='exampleCSS'>
-			#displayStyle <span class='bracket'> { </span>
-		</span>
-		<span>
-			<table>
-				<tr><td><button class='transition'>transition: all 2s /*turn me on first, i animate*/;</button></td></tr>
-				<tr><td><button class='background'>background: rgb(60,60,60);</button></td></tr>
-				<tr><td><button class='color'>color: gold</button></td></tr>
-				<tr><td><button class='font'>font: 'Lobster', 'cursive';</button></td></tr>
-				<tr><td><button class='height'>height: 20px;</button></td></tr>
-				<tr><td><button class='width'>width: 200px;</button></td></tr>
-				<tr><td><button class='margin'>margin: 20px 20px;</button></td></tr>
-				<tr><td><button class='border'>border: 2px dashed green;</button></td></tr>
-				<tr><td><button class='padding'>padding: 35%;</button></td></tr>
-				<tr><td><button class='opacity'>opacity: .5 /*transparency*/;</button></td></tr>
-				<tr><td><button class='box'>box-shadow: 10px 10px 5px #888888;</button></td></tr>
-				
-				<tr><td><button class='textAlign'>text-align:right</button></td></tr>
-				<tr><td><button class='transform'>text-transform: uppercase;</button></td></tr>
-				<tr><td><button class='letterSpace'>letter-spacing: 10</button></td></tr>
-			</table> 
-		</span>
-		
-		<span class='exampleCSS'>
-			<span class='bracket'> } </span>
-		</span>
-		<hr>
-	</div>
+	<div id='allContent'>
+	<!-- this div is suppose to mimic CSS so if copied, you can see the intended style effect -->
+		<div class='floatSections'>	
+			<h1 class='titleBox'>CSS</h1>
+			<hr>
+			<span>
+				<span class='displayHTML'>
+					#displayStyle 
+					<span class='bracket'> { </span>
+				</span>
+				<table>
+					<!-- table so you can see all the HTML buttons -->
+					<tr><td><button class='transition'>transition: all 2s /*turn me on first, i animate*/;</button></td></tr>
+					<tr><td><button class='background'>background: rgb(60,60,60);</button></td></tr>
+					<tr><td><button class='border'>border: 2px dashed rgb(0,102,204);</button></td></tr>
+					<tr><td><button class='padding'>padding: 0px 10%; /*<50% because it applies on both sides*/</button></td></tr>
+					<tr><td><button class='box'>box-shadow: 10px 10px 5px #888888;</button></td></tr>		
+					<tr><td><button class='letterSpace'>letter-spacing: 10</button></td></tr>
+					<tr><td><button class='transform'>text-transform: uppercase;</button></td></tr>
+					<tr><td><button class='margin'>margin: 25% 0px /*auto used to center on page*/;</button></td></tr>
+					<tr><td><button class='opacity'>opacity: .5 /*transparency*/;</button></td></tr>
+					<tr><td><button class='color'>color: gold</button></td></tr>
+					<tr><td><button class='font'>font: 'Lobster', cursive;</button></td></tr>
+					<tr><td><button class='height'>height: 40px; /*defines height of line*/</button></td></tr>
+					<tr><td><button class='lineHeight'>line-height: 40px; /*centers words on line*/</button></td></tr>
+					<tr><td><button class='width'>width: 50% /*width of line (by 200px as well*/;</button></td></tr>
+					<tr><td><button class='textAlign'>text-align:right;</button></td></tr>
+				</table> 
+			</span>
+			
+			<span>
+				<span class='bracket'> } </span>
+			</span>
+			<!-- <hr> -->
+		</div>
 
-	<div class='display floatContainer'>
-		<h1 class='titleBox'>HTML</h1>
-		<hr>
-			<div id='test'>
+		<div class='floatSections'>
+			<h1 class='titleBox'>HTML</h1>
+			<hr>
 				<div id='container'>
-					<span id='displayStyle'>
+					<div id='displayStyle'>
 						AaBbCc
-					</span>
+					</div>
 				</div>
-			</div>
-		<hr>
+			<!-- <hr> -->
+		</div>
 	</div>
-
 
 	<script type='text/javascript' src='applyStyles.js'></script>
 </body>
