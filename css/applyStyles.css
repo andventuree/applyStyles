@@ -1,0 +1,169 @@
+body{
+	background: rgb(255,255,255);
+}
+
+.navbar {
+	color: black;
+	border-bottom: 2px solid black;
+/*	position: fixed;
+  	top: 0;*/
+}
+
+.app {
+	/*display: inline;*/
+	/*margin: auto;*/
+	/*margin-top: 50px;*/
+	margin-bottom: 50px;
+}
+
+#footer {
+  /*width: 100%;*/
+  /*margin-bottom: 0;*/
+  /*padding-right: 100px;*/
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  padding-top: 5px;
+  /*position: relative;*/
+  /*border-top: solid 2px white;  */
+  /*background: rgb(55, 50, 52);*/
+
+  /*text-align: right;*/
+  /*opacity: .8; */
+  /*background: rgb(255,255,255);*/
+}
+
+#github {
+  height: 30px;
+  width: 50px;
+  text-decoration: none;
+  color: #FFFFFF;
+
+}
+
+/*Cosmetics for each component (HTML, CSS) ---------------------------------*/
+.title {
+	/*color: rgb(245,245,245);*/
+	color: black;
+	/*margin: 0px;*/
+	border-bottom: 2px solid black;
+	text-align: center;
+}
+
+#CSSbox , #HTMLbox{
+	height: 300px;
+	margin-top: 50px;
+}
+
+.presentationContainer {
+	background: rgb(55, 50, 52);
+	border-radius: 2%;
+	border: 2px solid black;
+	padding: 5px;
+	/*height: 300px;*/
+	margin: 5px;.
+/*	box-shadow: 10px 10px 5px black;
+		-moz-box-shadow: 10px 10px 5px #888888;
+		-webkit-box-shadow: 10px 10px 5px #888888;*/
+}
+
+#CSSid {
+	color: rgb(102,204,0);
+	font-size: 18px;
+}
+
+.bracket {
+	color: white;
+	font-size: 1.5em;
+}
+
+/*.container {
+	border: 3px solid white;
+}*/
+
+/*Buttons ------------------------------------------------------------------*/
+.cssBtn {
+	/*width: 150px;*/
+	/*margin: 0px 5px 0px 5px;*/
+	border: none;
+	background: rgb(55, 50, 52);
+	text-align: left;
+	/*outline: none;*/
+	font-weight: 600;
+	/*height: 15px;*/
+	/*line-height: 1;*/
+	color: gray;
+}
+
+.selectedBtn {
+	color: #007bff;
+	/*font-weight: 600;*/
+}
+
+.cssBtn:hover {
+	/*background: gold;*/
+	/*outline: rgb(100,100,100);*/
+	/*text-align: left;*/
+	/*background: rgba(85, 80, 82, .1);*/
+	/*font-weight: 800;*/
+}
+
+/*All the styles ------------------------------------------------------------------*/
+/* transition works, but it needs to be applied first
+then each affect after will animate by 1 sec */
+.transitionCSS		{ transition: all 2s				}
+.backgroundCSS		{ background: rgb(150,150,150)		}
+.colorCSS 			{ color: gold						}
+.fontCSS 			{ font-family: 'Lobster', cursive	}
+.heightCSS			{ height: 200px						} /*not perfect*/
+.widthCSS 			{ width: 200px						} /*not perfect*/
+.marginCSS			{ margin: 20px 20px 				} /*not perfect*/
+.borderCSS			{ border: 2px dashed rgb(0,102,204)	}
+.paddingCSS			{ padding: 35%						}
+.opacityCSS 		{ opacity: .5 						}
+/* need to figure out what this does*/
+.boxCSS				{ box-shadow: 10px 10px 5px black
+					  -moz-box-shadow: 10px 10px 5px #888888
+					  -webkit-box-shadow: 10px 10px 5px #888888	}
+/* will need to apply text align to the parent of id='target'*/
+.textAlignCSS		{ text-align: right 				} /*not perfect*/
+.transformCSS		{ text-transform: uppercase			}
+.letterSpaceCSS		{ letter-spacing: 10				}
+/*.positioningCSS		{ position: fixed; 					}*/ /*to test*/
+
+
+.sampleTextContainer {
+	/*position: fixed;*/
+/*	position: static;
+	float: left;
+	float: right;*/
+	position: absolute ;
+	/*position: relative;*/
+	  /*top: 55%;*/
+  	  /*left: 43%;*/
+  	/*text-align: center;*/
+  	background: white;
+}
+
+
+
+/*TO DELETE ------------------------------------------------------------------*/
+.floatStyles {
+	/*float: left;*/
+	/*border: 3px solid purple;*/
+	/*width: 400px;*/
+	/*height: 400px;*/
+	/*padding: 0px 10px;*/
+	/*margin: 100px 0px 100px 150px;*/
+}
+
+.floatContainer {
+	/*float: left;*/
+	/*border: 3px solid purple;*/
+	/*width: 400px;*/
+	/*height: 400px;*/
+	/*background: white;*/
+	/*background: rgb(55, 50, 52);*/
+	/*margin: 100px 100px 100px 0px;*/
+}
